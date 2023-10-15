@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rejestracja na wycieczkę do Energylandii</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://i.ytimg.com/vi/a3V2c8061dw/maxresdefault.jpg');
+            background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        form {
+            max-width: 600px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        select {
+            appearance: none;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form action="mailto:twoj@mail.com" method="post" enctype="text/plain">
+        <h2>Rejestracja na wycieczkę do Energylandii</h2>
+        <label for="firstName">Podaj Imię:</label>
+        <input type="text" id="firstName" name="firstName" required>
+
+        <label for="lastName">Podaj Nazwisko:</label>
+        <input type="text" id="lastName" name="lastName" required>
+
+        <label for="email">Podaj emaila:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="gender">Wybór Płci:</label>
+        <select id="gender" name="gender">
+            <option value="male">Mężczyzna</option>
+            <option value="female">Kobieta</option>
+        </select>
+
+        <label for="age">Wpisanie wieku:</label>
+        <input type="text" id="age" name="age" required>
+
+        <label>Wybór atrakcji:</label>
+        <input type="checkbox" id="hyperion" name="attractions" value="Hyperion">
+        <label for="hyperion">Hyperion</label>
+
+        <input type="checkbox" id="zadra" name="attractions" value="Zadra">
+        <label for="zadra">Zadra</label>
+
+        <input type="checkbox" id="mayan" name="attractions" value="Mayan">
+        <label for="mayan">Mayan</label>
+
+        <input type="checkbox" id="abyssus" name="attractions" value="Abyssus">
+        <label for="abyssus">Abyssus</label>
+
+        <label for="otherAttraction">Inne atrakcje:</label>
+        <input type="text" id="otherAttraction" name="otherAttraction">
+
+        <label>Wybór jedzenia:</label>
+        <select id="food" name="food">
+            <option value="pizza">Pizza</option>
+            <option value="burger">Burger</option>
+        </select>
+
+        <label>
+            <input type="checkbox" id="consent" name="consent" required>
+            Zaznacz zgody na przetwarzanie danych
+        </label>
+
+        <button type="submit">Wyślij</button>
+    </form>
+</body>
+</html>
